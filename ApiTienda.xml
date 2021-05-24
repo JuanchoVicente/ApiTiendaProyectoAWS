@@ -1,0 +1,644 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ApiTienda</name>
+    </assembly>
+    <members>
+        <member name="T:ApiTienda.Controllers.AuthController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ApiTienda.Controllers.AuthController.#ctor(ApiTienda.Repositories.RepositoryUsuario,ApiTienda.Helpers.HelperToken)">
+            <summary>
+            
+            </summary>
+            <param name="repo"></param>
+            <param name="helperToken"></param>
+        </member>
+        <member name="M:ApiTienda.Controllers.AuthController.Login(ApiTienda.Models.LoginApi)">
+            <summary>
+            
+            </summary>
+            <param name="usuario"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.AuthController.GetUsuarios">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.AuthController.BuscarUsuario(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ApiTienda.Controllers.CategoriasController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ApiTienda.Controllers.CategoriasController.#ctor(ApiTienda.Repositories.RepositoryCategoria)">
+            <summary>
+            
+            </summary>
+            <param name="repo"></param>
+        </member>
+        <member name="M:ApiTienda.Controllers.CategoriasController.GetCategorias">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.CategoriasController.BuscarCategoria(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.CategoriasController.NuevaCategoria(ApiTienda.Models.Categoria)">
+            <summary>
+            
+            </summary>
+            <param name="cate"></param>
+        </member>
+        <member name="M:ApiTienda.Controllers.CategoriasController.ModificarCategoria(ApiTienda.Models.Categoria)">
+            <summary>
+            
+            </summary>
+            <param name="cate"></param>
+        </member>
+        <member name="M:ApiTienda.Controllers.CategoriasController.EliminarCategoria(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="T:ApiTienda.Controllers.CitasController">
+            <summary>
+            Controladora citas
+            </summary>
+        </member>
+        <member name="M:ApiTienda.Controllers.CitasController.#ctor(ApiTienda.Repositories.RepositoryCita)">
+            <summary>
+            
+            </summary>
+            <param name="repo"></param>
+        </member>
+        <member name="M:ApiTienda.Controllers.CitasController.GetCitas">
+            <summary>
+            Lista
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.CitasController.BuscarCita(System.Int32)">
+            <summary>
+            Buscar
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.CitasController.NuevaCita(ApiTienda.Models.Cita)">
+            <summary>
+            Crear
+            </summary>
+            <param name="ci"></param>
+        </member>
+        <member name="M:ApiTienda.Controllers.CitasController.ModificarCita(ApiTienda.Models.Cita)">
+            <summary>
+            Modificar
+            </summary>
+            <param name="ci"></param>
+        </member>
+        <member name="M:ApiTienda.Controllers.CitasController.EliminarCita(System.Int32)">
+            <summary>
+            Eliminar
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="T:ApiTienda.Controllers.ComentariosController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ApiTienda.Controllers.ComentariosController.#ctor(ApiTienda.Repositories.RepositoryComentario)">
+            <summary>
+            
+            </summary>
+            <param name="repo"></param>
+        </member>
+        <member name="M:ApiTienda.Controllers.ComentariosController.GetComentarios">
+            <summary>
+            Lista
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.ComentariosController.BuscarComentarios(System.Int32)">
+            <summary>
+            Buscar
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.ComentariosController.NuevaComentarios(ApiTienda.Models.Comentario)">
+            <summary>
+            Nuevo
+            </summary>
+            <param name="co"></param>
+        </member>
+        <member name="M:ApiTienda.Controllers.ComentariosController.ModificarComentario(ApiTienda.Models.Comentario)">
+            <summary>
+            
+            </summary>
+            <param name="co"></param>
+        </member>
+        <member name="M:ApiTienda.Controllers.ComentariosController.EliminarComentario(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="T:ApiTienda.Controllers.FacturasController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ApiTienda.Controllers.FacturasController.#ctor(ApiTienda.Repositories.RepositoryFactura)">
+            <summary>
+            
+            </summary>
+            <param name="repo"></param>
+        </member>
+        <member name="M:ApiTienda.Controllers.FacturasController.GetFactura">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.FacturasController.BuscarFactura(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.FacturasController.NuevaFactura(ApiTienda.Models.Factura)">
+            <summary>
+            
+            </summary>
+            <param name="fa"></param>
+        </member>
+        <member name="M:ApiTienda.Controllers.FacturasController.ModificarFactura(ApiTienda.Models.Factura)">
+            <summary>
+            
+            </summary>
+            <param name="fa"></param>
+        </member>
+        <member name="M:ApiTienda.Controllers.FacturasController.EliminarFactura(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="T:ApiTienda.Controllers.MaterialController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ApiTienda.Controllers.MaterialController.#ctor(ApiTienda.Repositories.RepositoryMaterial)">
+            <summary>
+            
+            </summary>
+            <param name="repo"></param>
+        </member>
+        <member name="M:ApiTienda.Controllers.MaterialController.Materiales">
+            <summary>
+            Lista de materiales
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.MaterialController.BuscarMaterial(System.Int32)">
+            <summary>
+            Buscar material por identificador
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.MaterialController.BuscarMaterialNombre(System.String)">
+            <summary>
+            Buscar materiales por nombre
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.MaterialController.BuscarMaterialCategoria(System.Int32)">
+            <summary>
+            Buscar materiales por categoria
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.MaterialController.BuscarMaterialPrecio(System.Int32)">
+            <summary>
+            Buscar materiales por precio
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.MaterialController.FiltrarPrecioMas(System.Int32)">
+            <summary>
+            Filtrar el precio por una cantidad
+            y el mayor primero
+            </summary>
+            <param name="precio"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.MaterialController.FiltrarPrecioMenor(System.Int32)">
+            <summary>
+            Filtrar el precio por una cantidad 
+            y el mas bajo primero
+            </summary>
+            <param name="precio"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.MaterialController.NuevoMaterial(ApiTienda.Models.Material)">
+            <summary>
+            Se crea un nuevo material a partir de los datos
+            introducidos
+            </summary>
+            <param name="m"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.MaterialController.ModificarMaterial(ApiTienda.Models.Material)">
+            <summary>
+            Modifica un material
+            </summary>
+            <param name="m"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.MaterialController.CambiarPrecio(System.Int32,System.Int32)">
+            <summary>
+            Cambia el precio de un material
+            </summary>
+            <param name="id"></param>
+            <param name="precio"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.MaterialController.SubirPreciosCategoria(System.Int32,System.Int32)">
+            <summary>
+            Sube el precio de una misma categoria
+            </summary>
+            <param name="precio"></param>
+            <param name="idcategoria"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.MaterialController.CambiarDescripcion(System.Int32,System.String)">
+            <summary>
+            Cambia la descripcion de un material
+            </summary>
+            <param name="id"></param>
+            <param name="descr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.MaterialController.AddDescripcion(System.Int32,System.String)">
+            <summary>
+            Añade informacion a la descripcion de un material
+            </summary>
+            <param name="id"></param>
+            <param name="descr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.MaterialController.EliminarMaterial(System.Int32)">
+            <summary>
+            Eliminar un material por idenficador
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ApiTienda.Controllers.TatuajesController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ApiTienda.Controllers.TatuajesController.#ctor(ApiTienda.Repositories.RepositoryTatuaje)">
+            <summary>
+            
+            </summary>
+            <param name="repo"></param>
+        </member>
+        <member name="M:ApiTienda.Controllers.TatuajesController.GetTatuajes">
+            <summary>
+            Mostrar los tatuajes
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.TatuajesController.BuscarTatuaje(System.Int32)">
+            <summary>
+            Buscar un tatuaje por identificador
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.TatuajesController.BuscarTatuajeNombre(System.String)">
+            <summary>
+            Buscar tatuaje por nombre (que contenga el parametro)
+            </summary>
+            <param name="nombre"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.TatuajesController.BuscarTatuajePrecio(System.Int32)">
+            <summary>
+            Buscar tatuaje por precio exacto
+            </summary>
+            <param name="precio"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.TatuajesController.NuevoTatuaje(ApiTienda.Models.Tatuaje)">
+            <summary>
+            Añadir un nuevo tatuaje
+            </summary>
+            <param name="t"></param>
+        </member>
+        <member name="M:ApiTienda.Controllers.TatuajesController.PrecioMayor(System.Int32)">
+            <summary>
+            Lista de precios mayor que el introducido
+            </summary>
+            <param name="precio"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.TatuajesController.PrecioMenor(System.Int32)">
+            <summary>
+            Lista de precios menor que el introducido
+            </summary>
+            <param name="precio"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.TatuajesController.EntrePrecios(System.Int32,System.Int32)">
+            <summary>
+            Filtrar entre un menor y un mayor precio
+            </summary>
+            <param name="min"></param>
+            <param name="max"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.TatuajesController.BuscarTamañaPrecio(System.String,System.Int32)">
+            <summary>
+            Filtrar por tamaño y precio
+            </summary>
+            <param name="size"></param>
+            <param name="precio"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.TatuajesController.ListaTamaños">
+            <summary>
+            Lista de tamaños sin repetir
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.TatuajesController.ListaPrecios">
+            <summary>
+            Lista de precios sin repetir
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.TatuajesController.ModificarTatuaje(ApiTienda.Models.Tatuaje)">
+            <summary>
+            Modificar un tatuaje
+            </summary>
+            <param name="t"></param>
+        </member>
+        <member name="M:ApiTienda.Controllers.TatuajesController.CambiarPrecio(System.Int32,System.Int32)">
+            <summary>
+            Cambiar precio de un tatuaje concreto
+            </summary>
+            <param name="id"></param>
+            <param name="precio"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.TatuajesController.SubirPrecio(System.Int32,System.Int32)">
+            <summary>
+            Añadir precio del parametro al precio
+            del tatuaje
+            </summary>
+            <param name="id"></param>
+            <param name="precio"></param>
+        </member>
+        <member name="M:ApiTienda.Controllers.TatuajesController.CambiarImagen(System.Int32,System.String)">
+            <summary>
+            Cambiar la imagen de un tatuaje concreto
+            </summary>
+            <param name="id"></param>
+            <param name="img"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.TatuajesController.ModificarPrecioPorTamaño(System.Int32,System.String)">
+            <summary>
+            Modificar el precio de una lista de tatuajes 
+            en referencia a tener el mismo tamaño
+            </summary>
+            <param name="precio"></param>
+            <param name="tamaño"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.TatuajesController.EliminarTatuaje(System.Int32)">
+            <summary>
+            Eliminar tatuaje por identificador
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:ApiTienda.Controllers.TatuajesController.EliminarVariosPorPrecio(System.Int32)">
+            <summary>
+            Eliminar todos los tatuajes con el 
+            precio indicado
+            </summary>
+            <param name="precio"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ApiTienda.Controllers.UsuariosController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ApiTienda.Controllers.UsuariosController.#ctor(ApiTienda.Repositories.RepositoryUsuario)">
+            <summary>
+            
+            </summary>
+            <param name="repo"></param>
+        </member>
+        <member name="M:ApiTienda.Controllers.UsuariosController.ListaUsuario">
+            <summary>
+            Listado de usuarios
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.UsuariosController.BuscarUsuario(System.Int32)">
+            <summary>
+            Buscar usuario, esta con seguridad
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.UsuariosController.OrdenarUsers">
+            <summary>
+            Paginar de dos en dos
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.UsuariosController.NuevoUsuario(System.String,System.String,System.Int32,System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            Crear un nuevo usuario con los 
+            parametros enviados
+            </summary>
+            <param name="nombre"></param>
+            <param name="pass"></param>
+            <param name="edad"></param>
+            <param name="salud"></param>
+            <param name="favham"></param>
+            <param name="favape"></param>
+            <param name="favvin"></param>
+            <param name="cesta"></param>
+            <param name="telefono"></param>
+            <param name="correo"></param>
+            <param name="rrss"></param>
+            <param name="rol"></param>
+            <param name="hora"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.UsuariosController.ModificarUsuario(System.Int32,System.String,System.String,System.Int32,System.String,System.String,System.String,System.String,System.Int32,System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            Modificar usuario
+            </summary>
+            <param name="id"></param>
+            <param name="nombre"></param>
+            <param name="pass"></param>
+            <param name="edad"></param>
+            <param name="salud"></param>
+            <param name="favham"></param>
+            <param name="favape"></param>
+            <param name="favvin"></param>
+            <param name="cesta"></param>
+            <param name="telefono"></param>
+            <param name="correo"></param>
+            <param name="rrss"></param>
+            <param name="rol"></param>
+            <param name="hora"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.UsuariosController.FavoritosHamburguesas(System.Int32,System.String)">
+            <summary>
+            Añadir hamburguesa a la lista de favoritos
+            </summary>
+            <param name="id"></param>
+            <param name="nombre"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.UsuariosController.FavoritosAperitivos(System.Int32,System.String)">
+            <summary>
+            Añadir aperitivo a la lista de favoritos
+            </summary>
+            <param name="id"></param>
+            <param name="nombre"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.UsuariosController.FavoritosVinos(System.Int32,System.String)">
+            <summary>
+            Añadir vino a la lista de favoritos
+            </summary>
+            <param name="id"></param>
+            <param name="nombre"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.UsuariosController.CambiarRRSS(System.Int32,System.String)">
+            <summary>
+            Añadir Redes Sociales a la lista
+            </summary>
+            <param name="id"></param>
+            <param name="nombre"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.UsuariosController.ModificarCesta(System.Int32,System.Int32)">
+            <summary>
+            Añadir a la cesta
+            </summary>
+            <param name="id"></param>
+            <param name="cantidad"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.UsuariosController.CambiarRolUsuario(System.Int32,System.Int32)">
+            <summary>
+            Cambiar rol
+            1. Administrador
+            2. Tatuados
+            3. Cliente
+            4. Usuario
+            </summary>
+            <param name="id"></param>
+            <param name="nrol"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.UsuariosController.ModificarPass(System.String,System.Int32,System.String)">
+            <summary>
+            Modificar contraseña, solo si confirmar con
+            administrador para poder cambiar la contraseña,
+            introducir identificador 
+            </summary>
+            <param name="confirmar"></param>
+            <param name="id"></param>
+            <param name="nuevapass"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ApiTienda.Controllers.UsuariosController.EliminarUsuario(System.Int32)">
+            <summary>
+            Eliminar un usuario por identificador
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ApiTienda.Data.TiendaContext">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ApiTienda.Data.TiendaContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{ApiTienda.Data.TiendaContext})">
+            <summary>
+            
+            </summary>
+            <param name="options"></param>
+        </member>
+        <member name="P:ApiTienda.Data.TiendaContext.Categorias">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ApiTienda.Startup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ApiTienda.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:ApiTienda.Startup.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ApiTienda.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:ApiTienda.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>
